@@ -4,7 +4,6 @@
 //
 //  Created by Danil Lomaev on 06.06.2021.
 //
-#if canImport(UIKIt)
 import Foundation
 import UIKit
 
@@ -26,16 +25,14 @@ public extension CGFloat {
     /// Функция для взятия фрейма от ширины экрана в процентах
     /// - Parameter percent: Процент от ширины
     /// - Returns: Ширина фрейма
-  public static func displayWidth(_ percent: Double) -> CGFloat {
+  static func displayWidth(_ percent: Double) -> CGFloat {
         Display.width * CGFloat(percent) / 100
     }
     
     /// Функция для взятия фрейма от высоты экрана в процентах
     /// - Parameter percent: Процент от высоты
     /// - Returns: Высота фрейма
-  public static func displayHeight(_ percent: Double) -> CGFloat {
+  static func displayHeight(_ percent: Double) -> CGFloat {
         Display.height * CGFloat(percent) / 100
     }
 }
-
-#endif
